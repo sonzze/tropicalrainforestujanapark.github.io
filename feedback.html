@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Feedback</title>
+    <link rel="stylesheet" href="feedback.css">
+    <script defer src="script.js"></script> <!-- Include JavaScript for comment section functionality -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                    <li><a href="introduction.html">INTRODUCTION</a></li>
+                    <li><a href="facilities.html">FACILITIES</a></li>
+                    <li><a href="perks.html">BENEFITS</a></li>
+                    <li><a href="feedback.html">FEEDBACK</a></li>
+            </ul>
+        </nav>
+    </div>
+    </header>
+
+    <!-- Video Section -->
+     <div class="content">
+        <section id="video-section" class="section">
+        <h2>Watch Our Park Overview</h2>
+        <div class="video-container">
+            <iframe width="560" height="315" src="Interview.mp4" 
+            title="YouTube video player" frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen></iframe>
+        </div>
+    </section>
+
+    <!-- Feedback Form -->
+    <section id="feedback-form" class="section">
+        <h2>Leave Your Feedback</h2>
+        <form id="feedbackForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="comments">Comments:</label>
+            <textarea id="comments" name="comments" rows="4" required></textarea><br><br>
+
+            <button type="submit">Submit Feedback</button>
+        </form>
+    </section>
+    </div>
+
+    <!-- Comment Section -->
+    <section id="comment-section" class="section">
+        <h2>User Feedback</h2>
+        <div id="commentsContainer">
+            <!-- User comments will appear here -->
+            <button type="delete">Delete</button>
+        </div>
+    </section>
+
+</body>
+</html>
+

@@ -1,0 +1,113 @@
+/* General Body Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  margin: 0;
+  padding: 0;
+  background-color: #647B3A;
+}
+
+header {
+  background-color: #374B0E;
+  color: white;
+  padding: 10px 20px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+}
+
+.navbar ul {
+  list-style-type: none;
+  margin: 10;
+  padding: 20;
+  display: flex;
+}
+
+.navbar ul li {
+  margin: 0 15px;
+}
+
+.navbar ul li a {
+  color:#ddd;
+  text-decoration: none;
+  padding: 10px 20px;
+}
+
+li a:hover {
+  background-color:#647B3A;
+}
+
+/* Slideshow Container */
+.slideshow-container {
+  margin: 5px auto 10px; /* Space below the navigation bar */
+  position: relative;
+  text-align: center;
+  max-width: 90%; /* Slideshow width */
+}
+
+.mySlides {
+  display: none; /* Hidden by default */
+  text-align: center;
+}
+
+/* Slideshow Images */
+.mySlides img {
+  border-radius: 20px; /* Rounded corners */
+  width: 100%; /* Full width of the container */
+  height: auto; /* Maintain aspect ratio */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); /* Shadow for a polished look */
+}
+
+/* Slideshow Text Overlay */
+.text {
+  background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent black */
+  color: white;
+  font-size: 18px;
+  padding: 10px 20px;
+  position: absolute;
+  bottom: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 8px;
+}
+
+/* Fade Animation for Slides */
+.fade {
+  animation-name: fade;
+  animation-duration: 2s;
+}
+
+@keyframes fade {
+  from { opacity: 0.4; }
+  to { opacity: 1; }
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .navbar a {
+      font-size: 16px; /* Adjust navbar font size */
+  }
+
+  .text {
+      font-size: 16px; /* Adjust text size in slideshow */
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar a {
+      font-size: 14px; /* Smaller font for very small screens */
+  }
+
+  .text {
+      font-size: 14px; /* Smaller slideshow text */
+  }
+}
+
